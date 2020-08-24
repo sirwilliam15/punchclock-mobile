@@ -17,5 +17,12 @@ namespace timeclock_mobile
         {
             InitializeComponent();
         }
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            
+            //var status = Application.Current.Properties["status"]
+            //Application.Current.Properties["Status"] = !status
+            DisplayAlert("Success!", String.Format("Time is currently: {0}", DateTime.Now), "OK");
+        }
     }
 }

@@ -5,12 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="timeclock_mobile.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+    <Button HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="Clock In/Out"
+            Clicked="Button_Clicked">
+    </Button>
 </ContentPage>

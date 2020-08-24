@@ -10,7 +10,7 @@ namespace timeclock_mobile
         {
             InitializeComponent();
 
-            MainPage = new GreetPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
