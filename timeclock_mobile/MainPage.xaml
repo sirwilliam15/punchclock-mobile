@@ -5,9 +5,23 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="timeclock_mobile.MainPage">
+    <!--
     <Button HorizontalOptions="Center"
             VerticalOptions="Center"
             Text="Clock In/Out"
             Clicked="Button_Clicked">
     </Button>
+    -->
+    <ListView ItemsSource="{Binding Data}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <Label Text="{Binding id}" FontAttributes="Bold"/>
+                        <Label Text="{Binding firstName}" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

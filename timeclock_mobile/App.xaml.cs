@@ -10,7 +10,7 @@ namespace timeclock_mobile
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MainPage() { BindingContext = new MainPageViewModel() };
         }
 
         protected override void OnStart()
